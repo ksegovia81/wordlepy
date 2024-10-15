@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Wordle KSK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mi Wordle KSK</h1>
+    <div id="game-controls">
+        <button onclick="setDifficulty('easy')">Facil</button>
+        <button onclick="setDifficulty('normal')">Norm</button>
+        <button onclick="setDifficulty('hard')">Dif</button>
+        <div id="timer">5:00</div>
+    </div>
+    <div id="tablero" class="matriz">
+        <div class="fila">
+            <div class="caja"></div>
+            <div class="caja"></div>
+            <div class="caja"></div>
+            <div class="caja"></div>
+            <div class="caja"></div>
+        </div>
+        <div class="fila">
+            <div class="caja"></div>
+            <div class="caja"></div>
+            <div class="caja"></div>
+            <div class="caja"></div>
+            <div class="caja"></div>
+        </div>
+        <div class="fila">
+            <div class="caja"></div>
+            <div class="caja"></div>
+            <div class="caja"></div>
+            <div class="caja"></div>
+            <div class="caja"></div>
+        </div>
+        <div class="fila">
+            <div class="caja"></div>
+            <div class="caja"></div>
+            <div class="caja"></div>
+            <div class="caja"></div>
+            <div class="caja"></div>
+        </div>
+        <div class="fila">
+            <div class="caja"></div>
+            <div class="caja"></div>
+            <div class="caja"></div>
+            <div class="caja"></div>
+            <div class="caja"></div>
+        </div>
+    </div>
+
+    <div id="teclado" class="matriz">
+        <div class="fila-letras">
+            <button>q</button>
+            <button>w</button>
+            <button>e</button>
+            <button>r</button>
+            <button>t</button>
+            <button>y</button>
+            <button>u</button>
+            <button>i</button>
+            <button>o</button>
+            <button>p</button>
+        </div>
+        <div class="fila-letras">
+            <button>a</button>
+            <button>s</button>
+            <button>d</button>
+            <button>f</button>
+            <button>g</button>
+            <button>h</button>
+            <button>j</button>
+            <button>k</button>
+            <button>l</button>
+        </div>
+        <div class="fila-letras">
+            <button>Del</button>
+            <button>z</button>
+            <button>x</button>
+            <button>c</button>
+            <button>v</button>
+            <button>b</button>
+            <button>n</button>
+            <button>m</button>
+            <button>Enter</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

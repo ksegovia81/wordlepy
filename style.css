@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+button {
+  display: flex;
+  width: 40px;
+  height: 50px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 3px;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #d3d6da;
+  color: #1a1a1b;
+}
+
+button:hover {
+  background-color: #bbb;
+}
+
+.matriz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.fila-letras {
+  display: flex;
+  justify-content: center;
+}
+
+.fila {
+  display: flex;
+}
+
+.caja {
+  border: 2px solid #d3d6da;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#tablero {
+  margin-bottom: 30px;
+}
+
+#teclado button:nth-child(1),
+#teclado button:last-child {
+  width: 60px;
+}
+#game-controls {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#game-controls button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #d3d6da;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#game-controls button:hover {
+  background-color: #bbb;
+}
+
+#timer {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+}
